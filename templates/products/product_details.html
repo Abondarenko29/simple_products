@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ product.name }}</title>
+    </head>
+    <body>
+        <h1>{{ product.name }}</h1>
+        <h2>{{ product.price }}</h2>
+        <p>{{ product.description }}</p>
+        {% for review in reviews %}
+        <h3>{{ review.author }}, {{ review.rating }}</h3>
+        <p>{{ review.rating }}</p><br><br>
+        {% endfor %}
+    </body>
+</html>

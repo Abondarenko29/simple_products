@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review</title>
+</head>
+<body>
+    <form method="post" action="{% url 'add_review' %}">
+        {% csrf_token %}
+        
+        <label for="number">Price id:</label>
+        <input type="number" id="product" name="product">
+        
+        <label for = "author">author-name:</label>
+        <input type="text" id="author" name="author">
+
+        <label for = "review-text:">review-text:</label>
+        <input type="text" id="review-text" name="review-text">
+
+        <label for="rating">rating:</label>
+        <input type="number" id="rating" name="rating">
+
+        <button type="submit" id="submit">submit</button>
+    </form>
+</body>
+</html>
